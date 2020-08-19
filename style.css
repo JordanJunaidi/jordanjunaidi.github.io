@@ -1,0 +1,110 @@
+/* Global */
+
+* {
+	overflow-x: hidden;
+}
+html {
+	font-size: 1rem;
+	font-family: Lato, sans-serif;
+	text-align: center;
+	color: white;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background:url("bricks.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+/* Classes */
+
+.first h1 {
+	font-size: 15rem;
+	text-align: center;
+	background: linear-gradient(to top, #ff4500, #daa520);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.first h5 {
+	font-size: 5rem;
+	text-align: center;
+	color: orange;
+	margin-bottom: 10rem;
+}
+
+.nav {
+	font-size: 35px;
+	text-align: center;
+	color: #c0c0c0;
+	margin-bottom: 0rem;
+	margin-right: 5rem;
+	margin-left: 5rem;
+	margin-top: 0px;
+	background: linear-gradient(to top, #ff4500, #daa520);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.heading {
+	font-size: 4rem;
+	text-align: center;
+	background: linear-gradient(to top, #ffffff, #008080);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+}
+
+.profilepic {
+	text-align: center;
+	height: 80%;
+	width: 100%;
+}
+
+.info {
+	text-align: center;
+	justify-content: center;
+	margin-right: 20rem;
+	margin-left: 20rem;
+	font-size: 24px;
+}
+
+.hyperlink {
+	text-align: center;
+	font-size: 24px;
+	background: orange;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+
+.skills-list {
+	text-align: center;
+	justify-content: center;
+	margin-right: 20rem;
+	margin-left: 20rem;
+	font-size: 24px;
+}
+
+.language {
+	text-align: center;
+	justify-content: center;
+	margin-right: 20rem;
+	margin-left: 20rem;
+	font-size: 40px;
+	color: gray;
+}
+
+.skills-list hr {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+#bigspace {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.empty {
+	margin: 10rem, 10rem;
+}
