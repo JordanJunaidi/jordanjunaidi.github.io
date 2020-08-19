@@ -92,7 +92,9 @@ body {
 	margin-right: 20rem;
 	margin-left: 20rem;
 	font-size: 40px;
-	color: gray;
+	background: linear-gradient(to top, #ffffff, #008080);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .skills-list hr {
