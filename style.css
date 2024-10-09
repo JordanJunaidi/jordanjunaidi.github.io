@@ -2,7 +2,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	margin: 0;
+	margin: 10px;
 	font-family: Roboto;
 	color: white;
 	background-color: #2A2F39;
@@ -112,4 +112,5 @@ h1 {
 .experience {
 	display: flex;
 	justify-content: space-between;
+	gap: 25px;
 }
