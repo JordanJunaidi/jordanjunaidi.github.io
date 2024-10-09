@@ -1,78 +1,88 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
 
-<html>
-	<head>
-		<link href="./style.css" rel="stylesheet" type="text/css">
-		<title>Jordan Junaidi</title>
-		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<div class="nav">
-				<a href="#about" class="nav">About me</a>
-				<a href="#skills" class="nav">My Skills</a>
-				<a href="#work" class="nav">My work</a>
+	<div class="popup" id="popup">
+		<h1>Contact</h1>
+		<p>Connect with me!</p>
+		<h4>LinkedIn: <a href=https://www.linkedin.com/in/jordan-junaidi-7524a5247 target=_blank>Click Here!</a></h4>
+		<h4>Email: jjunaidi@ucsd.edu</h4>
+		<button class="btn" onclick="closePopup()">Close</button>
+	</div>
+
+	<div class="header">
+		<button id="home"></button>
+		<div class="actions">
+			<button id="contact" onclick="openPopup()">Contact</button>
+		</div>
+	</div>
+
+	<div class="dividerContainer">
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div>
+
+	<div class="name">
+		<h1 id="name">Jordan Junaidi's Personal Website</h1>
+	</div>
+
+	<div class="dividerContainer">
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div>
+
+	<h1>About me</h1>
+
+	<div class="about">
+		<img id="selfie" src="img/me.png">
+		<p class="description">Hey, welcome to my personal website! My name is Jordan Junaidi and I am currently a freshman at the University of California, San Diego. I am working towards a Bachelor of Science in Computer Science and am very excited to break into the tech industry. I have a deep interest in innovative technologies that affect everyday life. Outside of the classroom, I love to play video games, play volleyball, and spend time with friends.</p>
+	</div>
+
+	<h1>My Experiences</h1>
+
+	<div class="experiences">
+		<div class="experience">
+			<img class="logo" src="img/intel.png">
+			<div class="experiencedescription">
+				<h2>Graphics Architecture Intern at Intel Corporation</h2>
+				<p>From June-July 2022, I worked as an intern for the Graphics Architecture team at Intel Corporation in Folsom, California. My main responsibility was to create, run, and maintain graphics performance experiments using proprietary performance modeling tools.</p>
 			</div>
-		</header>
-		<section class="first" id="first">
-			<div class="first">
-				<h1>Jordan Junaidi</h1>
-				<h5>Welcome to my Personal Website! Last Updated: 6/10/2024</h5>
-			</div>
-		</section>
-		<section class="about" id="about">
-			<div class="heading">
-				<h3>ABOUT ME</h3>
-			</div>
-			<div class="profilepic">
-				<img src="me.jpeg">
-			</div>
-			<div class="info">
-				<p>Hey there and welcome to my website! I built this website from scratch back in 2020 during the COVID-19 pandemic and have continued to update it throughout the years. My name is Jordan Junaidi and I'm a student at the University of California, San Diego, where I study computer science. I'm originally from the Sacramento area and graduated from Vista Del Lago High School in 2024.</p>
-			</div>
-		</section>
-		<section class="skills" id="skills">
-			<div class="heading">
-				<h3>MY SKILLS</h3>
-			</div>
-			<div class="info">
-				<p>I learned programming mainly through a website called <a href="https://www.codecademy.com/learn" target="_blank" class="hyperlink">Codecademy.</a> <br><br>Here are the lanuages I know:</p>
-			</div>
-			<div class="skills-list">
-				<hr>
-				<p class="language">Python</p>
-				<p>Python is one of the main languages that I use. I enjoy using it due to its simplicity and I will most likely be creating a majority of my future programs using this language.</p>
-				<hr>
-				<p class="language">C++</p>
-				<p>C++ is another one of the main languages that I am able to use. Now, I do not use it as often as Python, but in the past, I have used it to create several programs.</p>
-				<hr>
-				<p class="language">HTML and CSS</p>
-				<p>Another language that I can use. It is certainly not my specialty, but I am proficient enough in it to be able to create a simple website like this one.</p>
-				<hr>
-			</div>
-		</section>
-		<section class="work" id="work">
-			<div class="heading">
-				<h3>MY WORK</h3>
-			</div>
-			<div class="info">
-				<p>I've created several small programs. I plan to continue making programs and uploading them to my github.</p>
-				<p id="bigspace">I've created a projects repository on Github. There you can find my past works.</p>
-			</div>
-			<div class="hyperlink">
-				<a href="https://github.com/JordanJunaidi" target="_blank">Check out my github profile here!</a><br><br>
-				<a href="https://github.com/JordanJunaidi/Projects" target="_blank">Check out my projects repository here!</a>
-			</div>
-		</section>
-		<section class="empty">
-			<div class="empty">
-				<p>...</p>
-			</div>
-		</section>
-		<footer class="ending">
-			<div class="back">
-				<a href="#first" class="nav">Back to the top</a>
-			</div>
-		</footer>
-	</body>
+		</div>
+
+		<div class="experience">
+			<img class="logo" src="img/codeninjas.png">
+			<div class="experiencedescription">
+				<h2>Instructor at Code Ninjas</h2>
+				<p>From May 2023-August 2024, I worked as an Instructor at Code Ninjas. My responsibilities were to teach young kids coding.</p>
+		</div>
+	</div>
+
+	<h1>My Skills</h1>
+
+	<div class="skills">
+	</div>
+
+	<script>
+		let popup = document.getElementById("popup");
+
+		function openPopup() {
+			popup.classList.add("open-popup");
+		}
+
+		function closePopup() {
+			popup.classList.remove("open-popup");
+		}
+	</script>
+
+</body>
 </html>
