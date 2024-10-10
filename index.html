@@ -14,14 +14,17 @@
 	<div class="popup" id="popup">
 		<h1>Contact</h1>
 		<p>Connect with me!</p>
-		<h4>LinkedIn: <a href=https://www.linkedin.com/in/jordan-junaidi-7524a5247 target=_blank>Click Here!</a></h4>
+		<h4>LinkedIn: <a id="linkedin" href=https://www.linkedin.com/in/jordan-junaidi-7524a5247 target=_blank>Click Here</a></h4>
 		<h4>Email: jjunaidi@ucsd.edu</h4>
 		<button class="btn" onclick="closePopup()">Close</button>
 	</div>
+	
+	<a id="top"></a>
 
 	<div class="header">
-		<button id="home"></button>
+		<h1>//</h1>
 		<div class="actions">
+			<button class="git"><a class="git" href="https://github.com/JordanJunaidi" target="_blank">GitHub</a></button>
 			<button id="contact" onclick="openPopup()">Contact</button>
 		</div>
 	</div>
@@ -40,11 +43,11 @@
 		<div class="divider"></div>
 	</div>
 
-	<h1>About me</h1>
+	<h1>// About me</h1>
 
 	<div class="about">
 		<img id="selfie" src="img/me.png">
-		<p class="description">Hey, welcome to my personal website! My name is Jordan Junaidi and I am currently a freshman at the University of California, San Diego. I am working towards a Bachelor of Science in Computer Science and am very excited to break into the tech industry. I have a deep interest in innovative technologies that affect everyday life. Outside of the classroom, I love to play video games, play volleyball, and spend time with friends.</p>
+		<p class="description">Hey, welcome to my personal website! My name is Jordan Junaidi and I am currently a freshman at the University of California, San Diego. I am working towards a Bachelor of Science in Computer Science and am very excited to break into the tech industry. I have a deep interest in innovative technologies such as Artificial Intelligence that affect everyday life. Outside of the classroom, I love to play video games, play volleyball, and spend time with friends.</p>
 	</div>
 
 	<div class="dividerContainer">
@@ -52,14 +55,14 @@
 		<div class="divider"></div>
 	</div>
 
-	<h1>My Experiences</h1>
+	<h1>// My Experiences</h1>
 
 	<div class="experiences">
 		<div class="experience">
 			<img class="logo" src="img/intel.png">
 			<div class="experiencedescription">
 				<h2>Graphics Architecture Intern at Intel Corporation</h2>
-				<p>From June-July 2022, I worked as an intern for the Graphics Architecture team at Intel Corporation in Folsom, California. My main responsibility was to create, run, and maintain graphics performance experiments using proprietary performance modeling tools.</p>
+				<p>From June-July 2022, I worked as an intern for the Graphics Architecture team at Intel Corporation in Folsom, California. My main responsibility was to create, run, and maintain graphics performance experiments using proprietary performance modeling tools. In addition, I spent hours discussing graphics architecture with industry veterans.</p>
 			</div>
 		</div>
 
@@ -71,7 +74,7 @@
 			<img class="logo" src="img/codeninjas.png">
 			<div class="experiencedescription">
 				<h2>Instructor at Code Ninjas</h2>
-				<p>From May 2023-August 2024, I worked as an Instructor at Code Ninjas. My responsibilities were to teach young kids coding.</p>
+				<p>From May 2023-August 2024, I worked as an Instructor at Code Ninjas. There, I taught K-12 students a variety of coding concepts, from basic block-coding to full-on game development using C# and Unity. Outside of the teaching, I was also responsible for facilitating classroom discussions and keeping behavior in check.</p>
 		</div>
 	</div>
 
@@ -80,10 +83,33 @@
 		<div class="divider"></div>
 	</div>
 
-	<h1>My Skills</h1>
+	<h1>// My Skills</h1>
 
 	<div class="skills">
+		<p>Although I am still seeking to expand my skillset, I have picked up various skills over the past few years</p>
+		<ul>
+			<li>HTML, CSS, and JavaScript</li>
+			<ul>
+				<li>I learned HTML, CSS, and JavaScript through <a href="https://www.theodinproject.com/dashboard" target="_blank">the Odin Project.</a></li>
+				<li>Check out my basic calculator project <a href="https://jordanscalculator.netlify.app" target="_blank">here!</a></li>
+			</ul>
+			<li>Python</li>
+			<ul>
+				<li>Python has been my "main" programming language for several years now, and is what I feel most confident in.</li>
+				<li>I utilized Python in the competitive programming scene. I competed at <a href="https://hpecodewars.org/" target="_blank">HPE CodeWars</a> for all 4 years of high school, and got 4th place with my team in my final year.</p>
+			</ul>
+			<li>Java</li>
+			<li>C++</li>
+		</ul>
 	</div>
+
+	<div class="dividerContainer">
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div>
+
+	<h1>Thank you for visiting my website!</h1>
+	<p>Feel free to reach out to me at any time! My contact information can be found at the top of the page.</p>
 
 	<script>
 		let popup = document.getElementById("popup");
@@ -96,6 +122,8 @@
 			popup.classList.remove("open-popup");
 		}
 	</script>
+
+	<button id="back"><a id="backlink" href="#top">Back to Top</a></button>
 
 </body>
 </html>
