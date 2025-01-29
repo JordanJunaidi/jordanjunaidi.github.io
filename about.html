@@ -1,30 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Jordan Junaidi</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sacel=1.0" />
+    <title>About - JordanJunaidi</title>
+    <link rel="stylesheet" href="aboutmestyle.css" />
+    <script src="script.js" defer></script>
 
-        <header>
-            <div class="navContainer">
+    <!-- Icons-->
+    <link href="./assets/icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/icons/css/solid.css" rel="stylesheet" />
+    <link href="./assets/icons/css/brands.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="nav-bar">
+      <nav>
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="activeNav"><i class="fa-solid fa-user"></i></a>
+        <a href="./contact.html"><i class="fa-solid fa-envelope"></i></a>
+      </nav>
+      <ul class="socials">
+        <!-- LinkedIn -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/jordan-junaidi-7524a5247/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
 
-                <p id="navTitle">Jordan Junaidi</p>
-                
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+        <!-- Github -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/JordanJunaidi"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about">
+      <h1 id="title">About Me</h1>
+
+      <div class="tab-content">
+        <div id="overview" data-tab-content class="info active">
+          <div class="side-by-side">
+            <div class="textarea">
+              <h1>Who Am I?</h1>
+              <p>
+                Hi, my name is Jordan Junaidi and I'm currently a first-year
+                computer science student at UC San Diego and an aspiring
+                software engineer. I have experience with full-stack development
+                but am also interested in topics such as Artificial
+                Intelligence. I'm currently based in San Diego, California and
+                Folsom, California, but am open to relocation.
+              </p>
+              <div class="skills">
+                <h1>Skills</h1>
+                <div class="items">
+                  <div class="row">
+                    <div class="item">
+                      <i class="fa-brands fa-python"></i>
+                      <p>Python</p>
+                    </div>
+                    <div class="item">
+                      <i class="fa-brands fa-java"></i>
+                      <p>Java</p>
+                    </div>
+                    <div class="item">
+                      <i class="fa-brands fa-html5"></i>
+                      <p>HTML</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">
+                      <i class="fa-brands fa-css"></i>
+                      <p>CSS</p>
+                    </div>
+                    <div class="item">
+                      <i class="fa-brands fa-js"></i>
+                      <p>JavaScript</p>
+                    </div>
+                    <div class="item">
+                      <i class="fa-brands fa-react"></i>
+                      <p>React</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
-    </body>
+            <img id="me" src="./assets/images/pfp2.png" />
+          </div>
+        </div>
+
+        <div id="projects" data-tab-content class="info"></div>
+
+        <div id="experience" data-tab-content class="info">
+          <h1>My Experience</h1>
+          <div class="experience-entry">
+            <img src="./assets/images/intel.png" />
+            <div class="experience-description">
+              <h3>Graphics Architecture Intern @ Intel Corporation</h3>
+              <ul>
+                <li>
+                  Utilized proprietary performance modeling tools to design and
+                  analyze graphics performance experiments, providing actionable
+                  insights to engineering teams for feature optimization and
+                  performance maximization.
+                </li>
+                <li>
+                  Designed and delivered visualizations of experimental data to
+                  communicate insights and support data-driven decision-making.
+                </li>
+                <li>
+                  Collaborated with senior graphics architects to analyze and
+                  discuss topics such as memory compression, ray tracing, and
+                  graphics card infrastructure.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience-entry">
+            <img src="./assets/images/codeninjas.png" />
+            <div class="experience-description">
+              <h3>Coding Instructor @ Code Ninjas</h3>
+              <ul>
+                <li>
+                  Taught JavaScript, Lua, C\#, and Unity to K-12 students using
+                  a hands-on, project-based curriculum, fostering engagement and
+                  skill development.
+                </li>
+                <li>
+                  Guided advanced students through competitive programming
+                  problems in Python, promoting critical thinking and
+                  problem-solving abilities.
+                </li>
+                <li>
+                  Managed and facilitated classroom discussions with groups of
+                  20+ students.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="tabs">
+        <li data-tab-target="#overview" class="tab">Overview</li>
+        <li data-tab-target="#projects" class="tab">Projects</li>
+        <li data-tab-target="#experience" class="tab">Experience</li>
+      </ul>
+    </div>
+  </body>
 </html>

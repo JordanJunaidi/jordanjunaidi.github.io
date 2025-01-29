@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Jordan Junaidi</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sacel=1.0" />
+    <title>About - JordanJunaidi</title>
+    <link rel="stylesheet" href="contactstyle.css" />
+    <script src="script.js" defer></script>
 
-        <header>
-            <div class="navContainer">
+    <!-- Icons-->
+    <link href="./assets/icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/icons/css/solid.css" rel="stylesheet" />
+    <link href="./assets/icons/css/brands.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="nav-bar">
+      <nav>
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="./about.html"><i class="fa-solid fa-user"></i></a>
+        <a href="#" class="activeNav"><i class="fa-solid fa-envelope"></i></a>
+      </nav>
+      <ul class="socials">
+        <!-- LinkedIn -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/jordan-junaidi-7524a5247/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
 
-                <p id="navTitle">Jordan Junaidi</p>
-                
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </body>
+        <!-- Github -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/JordanJunaidi"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="contact-form">
+      <h1 class="contact-me">Contact Me</h1>
+      <p class="directions">
+        Fill out the form below to send me a message, and I'll get back to you
+        as soon as possible!
+      </p>
+
+      <hr />
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="379cabf9-8c2d-4b7c-b388-4d35bc78eebe"
+        />
+
+        <div class="input-box">
+          <input class="btn" name="name" type="text" placeholder="Full Name" />
+          <input class="btn" name="email" type="email" placeholder="Email" />
+        </div>
+
+        <div class="input-box">
+          <input
+            class="btn"
+            name="phone"
+            type="number"
+            placeholder="Phone Number"
+          />
+          <input class="btn" name="subject" type="text" placeholder="Subject" />
+        </div>
+
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input name="submit" type="submit" value="Send Message" class="btn-1" />
+      </form>
+    </section>
+  </body>
 </html>

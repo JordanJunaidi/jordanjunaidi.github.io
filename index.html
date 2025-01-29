@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Jordan Junaidi</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sacel=1.0" />
+    <title>Home - JordanJunaidi</title>
+    <link rel="stylesheet" href="style.css" />
 
-        <header>
-            <div class="navContainer">
+    <!-- Icons-->
+    <link href="./assets/icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/icons/css/solid.css" rel="stylesheet" />
+    <link href="./assets/icons/css/brands.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="nav-bar">
+      <nav>
+        <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+        <a href="./about.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./contact.html"><i class="fa-solid fa-envelope"></i></a>
+      </nav>
+      <ul class="socials">
+        <!-- LinkedIn -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/jordan-junaidi-7524a5247/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
 
-                <p id="navTitle">Jordan Junaidi</p>
-                
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <!-- Github -->
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/JordanJunaidi"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
+    <!-- Introduction -->
+    <section class="home">
+      <div class="home-content">
+        <h3>Hi,</h3>
 
-        <section id="introduction">
-            <img src="img/me5.png" id="self"> 
-            <h1>Hi, I'm Jordan Junaidi</h1>
-            <p>A Student at UC San Diego</p>
-            <button id="contact">Get in touch</button>
-        </section>
-    </body>
+        <h1>I'm Jordan</h1>
+        <h2>Computer Science Student</h2>
+
+        <p>
+          Welcome to my personal website! I'm a first-year computer science
+          student at the University of California, San Diego. Explore my page to
+          find out more about me!
+        </p>
+
+        <div class="btn-box">
+          <button
+            class="btn-1"
+            onclick="window.location.href = './about.html';"
+          >
+            About Me
+          </button>
+          <button
+            class="btn-2"
+            onclick="window.location.href = './contact.html';"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+      <div class="img-box"><img src="assets/images/pfp.png" /></div>
+    </section>
+
+    <!-- Introduction 
+    <div class="intro">
+      <div class="content-container">
+        <div class="text-zone">
+          <h1>
+            Hi, <br />
+            I'm Jordan
+          </h1>
+          <h2>Computer Science Student</h2>
+        </div>
+        <div class="img-zone">
+          <img src="assets/images/pfp.png" />
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          Welcome to my personal website! I'm a first-year computer science
+          student at the University of California, San Diego. Explore my page to
+          find out more about me!
+        </p>
+      </div>
+    </div>
+-->
+  </body>
 </html>
